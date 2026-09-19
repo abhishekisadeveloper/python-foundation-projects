@@ -4,3 +4,9 @@ class Car:
         self.year = year
         self.top_speed = top_speed
         self.color = color
+
+    # This is called Methode.
+    def details(self):
+        print(
+            f"This {self.modal} is aussambled in {self.year} and his top speed is {self.top_speed} and the color is {self.color}"
+        )
