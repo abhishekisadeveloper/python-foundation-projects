@@ -9,6 +9,7 @@ def comp_number():
     return computer_guess
 
 
+# User Guessing the num. here.
 computer = comp_number()
 while True:
     try:
@@ -23,3 +24,4 @@ while True:
             break
     except ValueError:
         print("Invalid input!")
+# complete it soon...
