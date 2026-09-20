@@ -1,4 +1,7 @@
 class Car:
+
+    origin_of_car = 'india' # class variable.
+    
     def __init__(self, modal, year, top_speed, color):
         self.modal = modal
         self.year = year
