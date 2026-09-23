@@ -86,3 +86,45 @@ s1 = BankAccount("Abhishek", 10000)
 s1.deposit(1000)
 s1.withdraw(50000)
 s1.get_balance()
+
+
+# 3. Employee Salary System
+# Create an Employee class with:
+
+# name
+# salary
+# department
+
+# Add methods:
+
+# give_raise(percentage) → increases salary by the given percentage
+# display_salary() → displays the current salary
+
+# Example:
+
+# emp = Employee("Rahul", 40000, "Backend")
+# emp.give_raise(10)
+# emp.display_salary()
+
+# Expected salary:
+
+# 44000
+
+# Challenge: Don't create a separate variable outside the class to calculate the new salary. The object itself should maintain its state.
+
+
+class Employee:
+    def __init__(self, name, salary, department):
+        self.name = name
+        self.salary = salary
+        self.department = department
+
+    def give_raise(self, percentage):
+        self.salary += int(self.salary / percentage)
+
+    def display_salary(self):
+        print(f'New Salary: {self.salary}')
+
+emp = Employee("Rahul", 100, "Backend")
+emp.give_raise(10)
+emp.display_salary()
